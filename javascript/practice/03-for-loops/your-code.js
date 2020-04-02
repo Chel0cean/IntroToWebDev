@@ -21,6 +21,9 @@ for (var n = 1; n <= 7; n++) {
 // Print each number to the JavaScript console.
 console.log("FOR ONE TO TEN");
 // Write your code here:
+for (var n = 1; n <= 10; n++) {
+  console.log(n);
+}
 
 
 
@@ -39,6 +42,9 @@ console.log("FOR ONE TO TEN");
 // 12
 console.log("COUNT BY TWOS FROM TWO TO TWELVE");
 // Write your code here:
+for (var n = 2; n <= 12; n = n + 2) {
+  console.log(n);
+}
 
 
 
@@ -58,7 +64,9 @@ console.log("COUNT BY TWOS FROM TWO TO TWELVE");
 // 0
 console.log("COUNT BACKWARD FROM SIX");
 // Write your code here:
-
+for (var n = 6;n >= 0; n--) {
+  console.log(n);
+}
 
 
 // 4. SUM EVENS
@@ -66,7 +74,8 @@ console.log("COUNT BACKWARD FROM SIX");
 // You're given two variables with numeric values:
 
 var limit = 10; // We stop looping when we reach this number.
-var sum = 0;    // We add even numbers to this variable.
+var sum = 0;
+var cN;    // We add even numbers to this variable.
 
 // Write a for loop that loops from 0 to limit.
 // If the current number is even, add it to sum. Otherwise, ignore it.
@@ -77,8 +86,16 @@ var sum = 0;    // We add even numbers to this variable.
 // What happens if you set limit to a negative number?
 console.log("SUM EVENS");
 // Write your code here:
+for (cN = 0; cN <= limit; cN++) {
+  console.log(cN);
+
 
 console.log("limit = %s, sum = %s", limit, sum);
+if (cN %2 ==0){
+  sum = sum +cN;
+console.log(sum)}
+}
+
 
 // 5. FIND A FAVORITE NUMBER
 // =========================
@@ -87,12 +104,17 @@ console.log("limit = %s, sum = %s", limit, sum);
 var winniesFavoriteNumber = 53; // Winnie's favorite number
 var kaisFavoriteNumber = 44;    // Kai's favorite number
 
-// Write a for loop that loops until it reaches either winniesFavoriteNumber 
+// Write a for loop that loops until it reaches either winniesFavoriteNumber
 // or kaisFavoriteNumber and then stop.
 // Print the final number to the JavaScript console.
 // Try changing the value of winniesFavoriteNumber and kaisFavoriteNumber.
 // Try adding a third, or forth, or fifth favorite number!
 console.log("FIND A FAVORITE NUMBER");
+for (n=0; n<=winniesFavoriteNumber; n++) {
+  if (n=winniesFavoriteNumber){
+    console.log(n)
+  }
+}
 // Write your code here:
 
 
