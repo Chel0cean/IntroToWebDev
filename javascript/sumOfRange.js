@@ -14,19 +14,18 @@ console.log("The sum of " + testArray + " is: " + sum);
 */
 var testArray = [];
 var sum = 0;
+while (testArray.length <= 4) {
 var newElement = prompt("Enter a number of your choice:");
 newElement = parseInt(newElement);
 
 testArray.push(newElement);
-while (testArray.length <= 4)
-{
-  newElement += prompt("Enter a number of your choice:");
 }
 
-for (var position = 0; position < testArray.length; position++)
+for (var i = 0; i < testArray.length; i++)
 {
-  sum += testArray[position];
+  sum += testArray[i];
 }
+
 
 
 console.log("The sum of " + testArray + " is: " + sum);
