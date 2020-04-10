@@ -35,14 +35,14 @@ function calculate() {
       document.getElementById("tables").innerHTML += counter + "<br />";
       console.log(counter);
       }
-      
+
     }
 
 
-  while (evenNumbers.length < 1) {
+  if (evenNumbers.length < 1) {
     document.getElementById("inv").innerHTML = "";
     document.getElementById("tables").innerHTML = "No even numbers to display.";
-    break;
+
     }
 
 
